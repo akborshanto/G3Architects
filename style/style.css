@@ -100,8 +100,8 @@ gap: 1rem;
 
 }
 .team_img_container >img{
- width: 15rem;
- height: 15rem;
+ width: 13rem;
+ height: 13rem;
 
 }
 .team_description{
@@ -152,12 +152,28 @@ font-weight: 400;
     }
 
 
-nav{
+nav,section.team_container{
     flex-direction: column;
 }
 
 
+/* FEaterase-section */
+.team_img_container {
+
+    gap: .6rem;
 }
+main{
+    margin: 51px auto;
+padding: 0 29px;
+
+}
+.team_img_container >img{
+    width: 10rem;
+    height: 10rem;
+   
+   }
+}
+
 
 /* TABLET_DEVICE(960px) */
 
@@ -167,7 +183,7 @@ nav{
         padding: 5px 0;
     }
 
-nav{
+nav,team_container{
     flex-direction: column;
 }
 .banner-text >h1 {
