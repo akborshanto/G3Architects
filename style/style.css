@@ -2,6 +2,12 @@
 /* work-sans */
 /* font-family: 'Work Sans', sans-serif; */
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Work Sans', sans-serif; */
+}
 :root{
     --Dark:#424242;
     --DarkFont:#727272;
@@ -12,7 +18,7 @@
 }
 
 
-/* shared_style */
+/* shared_style -----------------------------------------------*/
 .btn{
 
     border: none;
@@ -22,12 +28,27 @@
     color: #FFF;
 
     text-align: center;
-    font-family: 'Work Sans', sans-serif;
+
     font-size: 1.2rem;
     cursor: pointer;
 }
 
+.section_title{
 
+    color: #727272;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+
+}
+
+.seaction_heading{
+    font-size: 3rem;
+
+}
+
+/* header-section */
 header{
     background: rgba(255, 144, 14, 0.10);
     padding: 50px 240px;
@@ -38,9 +59,7 @@ nav{
     align-items: center;
 
 }
-.logo_title{
-    font-size: 3rem;
-}
+
 nav > ul{
     display: flex;
     gap:30px
@@ -68,10 +87,7 @@ nav >ul >li >a{
     color: var(--Dark);
     font-size: 4rem;
  }
- .banner-text >p{
-    color: var(--DarkFont);
-    margin:20px;
- }
+
  .banner_img >img{
     width: 100%;
     margin-top:30px;
@@ -143,6 +159,64 @@ font-weight: 400;
 
 }
 
+
+ /*-- =============================================
+             FACTS_SECTION
+ ==========================================================- */
+.fact_card_container{
+    display: flex;
+    justify-content: space-around;
+
+
+}
+.fact_section{
+    padding: 30px 240px;
+}
+
+/* 
+.fact-text{
+    margin-bottom:30px;
+    text-align: center;
+} */
+.fact-text >h1{
+    margin-bottom: 24px;
+}
+.fact-text >p{
+    margin-bottom: 100px;
+}
+.Facts_card {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 30px;
+    gap: 21px;
+}
+
+.Facts_card >img{
+    width: 55px;
+    height: 55px;
+}
+.Facts_card >h1 {
+    color:#424242;
+    font-family: Work Sans;
+    font-size: 45px;
+  
+    font-weight: 600;
+}
+.Facts_card >h1 {
+    color: #727272;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+
+
+
  /*-- =============================================
                RESPONSIVE_MEDIAQUERY  (576px) MOBILE_DIVICE
  ==========================================================- */
@@ -152,10 +226,23 @@ font-weight: 400;
     }
 
 
-nav,section.team_container{
-    flex-direction: column;
-}
+nav,.fact_card_container,.team_container 
 
+{
+    flex-direction: column;
+    gap: 20px;
+}
+.btn {
+    border: none;
+    border-radius: 4px;
+    background: #FF900E;
+    padding: 12px 30px;
+    color: #FFF;
+    text-align: center;
+    font-size: .5rem;
+    cursor: pointer;
+    margin-top: 20px;
+}
 
 /* FEaterase-section */
 .team_img_container {
@@ -172,6 +259,25 @@ padding: 0 29px;
     height: 10rem;
    
    }
+
+   .team_description {
+    padding: 0px;
+    text-align: center;
+}
+
+
+/* FAct-0section */
+.fact_section {
+    padding: 0 24px;
+}
+.fact-text >p {
+    margin-bottom: 33px;
+}
+.fact-text >h1 {
+    margin-bottom: 21px;
+    font-size: 1.5rem;
+}
+
 }
 
 
@@ -195,7 +301,7 @@ nav > ul {
     gap: 93px;
 }
 
-user agent stylesheet
+
 ul {
 
 .btn {
@@ -216,7 +322,7 @@ ul {
 }
 
 }
-
+}
 /* Laptop 1024px */
 @media screen and(min-width:960px)and (max-width:1024px){
 
