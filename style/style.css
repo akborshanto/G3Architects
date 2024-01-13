@@ -4,7 +4,29 @@
 
 :root{
     --Dark:#424242;
+    --DarkFont:#727272;
 }
+::selection{
+    color: #FF900E;
+}
+
+
+/* shared_style */
+.btn{
+
+    border: none;
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 20px 24px;
+    color: #FFF;
+
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+
 header{
     background: rgba(255, 144, 14, 0.10);
     padding: 50px 240px;
@@ -31,4 +53,102 @@ nav >ul >li >a{
     font-size: 1em;
     color: var(--Dark);
     font-family:  'Work Sans', sans-serif;;
+}
+
+/*-- =============================================
+                     Banner_SECTION
+ ==========================================================- */
+ .banner-text {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+ }
+ .banner-text >h1{
+    color: var(--Dark);
+    font-size: 4rem;
+ }
+ .banner-text >p{
+    color: var(--DarkFont);
+    margin:20px;
+ }
+ .banner_img >img{
+    width: 100%;
+    margin-top:30px;
+ }
+ /*-- =============================================
+               RESPONSIVE_MEDIAQUERY  (576px) MOBILE_DIVICE
+ ==========================================================- */
+@media  screen and (max-width:576px) {
+    header{
+        padding: 20px 0px;
+    }
+
+
+nav{
+    flex-direction: column;
+}
+
+
+}
+
+/* TABLET_DEVICE(960px) */
+
+@media  screen and (min-width:576px) and (max-width:768px) {
+ 
+    header{
+        padding: 5px 0;
+    }
+
+nav{
+    flex-direction: column;
+}
+.banner-text >h1 {
+    color: var(--Dark);
+    font-size: 3rem;
+}
+nav > ul {
+
+    gap: 93px;
+}
+
+user agent stylesheet
+ul {
+
+.btn {
+    border: none;
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 18px 18px;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.banner-text >p {
+    color: var(--DarkFont);
+    margin: 13px;
+    line-height: 30px;
+}
+
+}
+
+/* Laptop 1024px */
+@media screen and(min-width:960px)and (max-width:1024px){
+
+
+
+    header {
+        background: rgba(255, 144, 14, 0.10);
+        padding: 50px 30px;
+    }
+
+    .logo_title {
+        font-size: 2rem;
+    }
+
+
+
+
+
 }
