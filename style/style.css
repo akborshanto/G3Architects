@@ -32,7 +32,9 @@
     font-size: 1.2rem;
     cursor: pointer;
 }
-
+.btn:hover{
+    background-color: #d8780a;
+}
 .section_title{
 
     color: #727272;
@@ -72,9 +74,13 @@ nav >ul >li >a{
     text-decoration: none;
     font-size: 1em;
     color: var(--Dark);
-    font-family:  'Work Sans', sans-serif;;
-}
+    font-family:  'Work Sans', sans-serif;
 
+}
+nav >ul >li >a:hover{
+    color: #FF900E;
+    transition: 3s
+}
 /*-- =============================================
                      Banner_SECTION
  ==========================================================- */
@@ -215,6 +221,55 @@ font-weight: 400;
 }
 
 
+ /*-- =============================================
+            SPONSPORS_SECTION
+ ==========================================================- */
+
+
+.Sponspors{
+    padding: 30px 240px;
+}
+
+.sponspors_title{
+    text-align: center;
+}
+
+.sponspors_icon{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.sponspors_icon>img {
+    width: 165px;
+    margin-top: 30px;
+}
+#spons_id {
+    margin: 20px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
  /*-- =============================================
@@ -226,11 +281,16 @@ font-weight: 400;
     }
 
 
-nav,.fact_card_container,.team_container 
-
+nav,.fact_card_container,.team_container ,
+.sponspors_icon
 {
     flex-direction: column;
     gap: 20px;
+}
+nav > ul {
+    display: flex;
+    gap: 13px;
+    margin: 20px 0;
 }
 .btn {
     border: none;
@@ -243,20 +303,25 @@ nav,.fact_card_container,.team_container
     cursor: pointer;
     margin-top: 20px;
 }
-
+.banner-text >h1 {
+    font-size: 3rem;
+}
+.section_title {
+    margin: 15px 0;
+}
 /* FEaterase-section */
 .team_img_container {
 
     gap: .6rem;
 }
 main{
-    margin: 51px auto;
+    margin: 8px auto;
 padding: 0 29px;
 
 }
 .team_img_container >img{
-    width: 10rem;
-    height: 10rem;
+    width: 9rem;
+    height: 9rem;
    
    }
 
@@ -277,6 +342,24 @@ padding: 0 29px;
     margin-bottom: 21px;
     font-size: 1.5rem;
 }
+/*  .sponspors*/
+.Sponspors{
+    padding: 0 0px;
+}
+.sponspors_title>h1 {
+    text-align: center;
+    font-size: 34px;
+    margin: 22px 0;
+}
+.sponspors_title {
+
+    margin-bottom: 26px;
+}
+
+.sponspors_icon>img {
+    width: 128px;
+}
+
 
 }
 
