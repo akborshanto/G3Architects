@@ -5,6 +5,7 @@
 :root{
     --Dark:#424242;
     --DarkFont:#727272;
+    --Dark-03: #727272;
 }
 ::selection{
     color: #FF900E;
@@ -75,6 +76,73 @@ nav >ul >li >a{
     width: 100%;
     margin-top:30px;
  }
+
+
+ /*-- =============================================
+             FEATURES_SECTION
+ ==========================================================- */
+
+ main{
+    max-width: 1000px;
+    margin: 51px auto;
+    padding: 0px 265px;
+ }
+ section.team_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.team_img_container{
+
+display: grid;
+grid-template-columns: repeat(2,1fr);
+gap: 1rem;
+
+}
+.team_img_container >img{
+ width: 15rem;
+ height: 15rem;
+
+}
+.team_description{
+    padding: 40px;
+}
+
+.team_description >h1{
+    color: var(--Dark-03, #727272);
+
+    font-family: Work Sans;
+    font-size: 45px;
+}
+
+
+
+
+.of_our{
+    color:  #131313;
+    font-family: Work Sans;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+}
+.Features{
+    color: #FF900E;
+font-family: Work Sans;
+font-size: 45px;
+font-style: normal;
+font-weight: 700;
+
+}
+.team_description{
+    color:  #727272;
+font-family: Work Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+
+
+}
+
  /*-- =============================================
                RESPONSIVE_MEDIAQUERY  (576px) MOBILE_DIVICE
  ==========================================================- */
@@ -152,3 +220,4 @@ ul {
 
 
 }
+
